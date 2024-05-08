@@ -15,6 +15,7 @@ redisClient.connect();
 // Middleware to parse JSON bodies
 app.use(express.json());
 
+
 // POST route with Redis caching
 app.post('/data', async (req, res) => {
     const apiUrl = 'https://api.thirdparty.com/data'; // URL of the third-party API
